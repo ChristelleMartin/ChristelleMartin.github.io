@@ -1,0 +1,17 @@
+body {
+    background-color: #f2e9e1;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+h1 {
+    color: #672a3f;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin-top: 10rem;
+}
