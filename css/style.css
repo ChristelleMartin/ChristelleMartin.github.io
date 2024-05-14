@@ -1,17 +1,302 @@
 body {
     background-color: #f2e9e1;
-    padding: 10px;
-    font-size: 1rem;
+    font-family: sans-serif;
+    margin: 0;   
+}
+
+#page-wrapper {
+    max-width: 100vw;
+}
+h1, h2, h3 {
+    color: #672a3f;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1em;
 }
 
 h1 {
-    color: #672a3f;
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
+    font-size: 1.8em;
+}
+
+a {
+    text-transform: uppercase;
+    color: #f2e9e1;
+    font-size: 0.6em;
+    text-decoration: none;
 }
 
 p {
     text-align: center;
-    margin-top: 10rem;
+    padding-top: 5px;
 }
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 95%;
+    border: 4px solid #fff;
+}
+
+
+/* Gestion des sections */
+
+#page-header {
+    color: #672a3f;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10em 0 3em 0;
+    background-image: url("../images/banniere_christelle_martin.jpg");
+    background-size: cover;
+}
+
+#intro, #contact{
+    color: #f2e9e1;
+    background-color: #672a3f;
+    padding-bottom: 30px;
+}
+
+#skills {
+    background-color: #f2e9e1;
+    padding-bottom: 30px;
+}
+
+#portefolio, #vision {
+    background-color: #e4cdb8;
+    padding-bottom: 30px;
+}
+
+#page-footer {
+    color: #fff;
+    background-color: #292929;
+    padding: 1.5em;
+}
+
+.button-dark {
+    background-color: #2C2F37;
+    font-weight: bold;
+    margin: 20px 10px 20px 180px;
+    padding: 14px;
+    border: 1px solid #EFF0F0;
+    border-radius: 6px;
+}
+
+.button-light {
+    background-color: #f2e9e1;
+    font-weight: bold;
+    color: #672a3f;
+    margin: 2em ;
+    padding: 14px;
+    border: 1px solid #672a3f;
+    border-radius: 6px;
+}
+
+.button-light:hover {
+    background-color: white;
+}
+
+
+/* Gestion des titres en déporté vers le haut */
+
+.section-title {
+    background-color: #f2e9e1;
+    color: #672a3f;
+    font-size: 1.2em;
+    position: relative;
+    top: -1em;
+    margin: 0 35%;
+    padding: 0.5em;
+    border: 2px solid #672a3f;
+    border-radius: 5px;
+    text-align: center;
+    min-width: fit-content;
+}
+
+/* Gestion du menu de navigation avec des ancres */
+
+#nav-bar {
+    background-color: #672a3f;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    border: 1px solid #672a3f;
+    border-bottom-right-radius: 7px;
+}
+#nav-bar a {
+    margin-right: 2em;
+    padding: 1.8em;
+}
+
+#nav-bar a:hover {
+    background-color: #EFF0F0;
+    color: #672a3f;
+}
+
+#nav-bar ul li {
+    display: inline-block;
+    padding: 0.4em;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+/* Mise en page section intro */
+
+#intro .section-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro p {
+    text-align: center;
+    padding: 20px;
+}
+
+#intro aside {
+    max-width: 800px;
+    border: 1px solid #EFF0F0;
+    margin: 20px auto;
+    font-size: 1.3em;
+}
+
+#intro .text-left {
+    max-width: 600px;
+}
+
+#intro .right {
+    max-width: 300px;
+    margin: 1.5em;
+}
+
+#intro img {
+    border-radius: 50%;
+}
+
+
+/* Mise en page section vision */
+
+#vision .action-button {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+
+
+/* Mise en page section skills */
+
+#skills .section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mise en forme du tableau */
+table {
+    table-layout: fixed;
+    width: 95%;
+    border-collapse: collapse;
+    border: 2px solid #EFF0F0;
+    margin: 20px 0;
+}
+
+thead {
+    font-size: 1.2em;
+    font-weight: 400;
+}  
+
+.title1-table {
+    color: #f2e9e1;
+    background-color: #672a3f;
+    padding: 7px;
+    text-align: center;
+}
+
+.title2-table {
+    color: #2C2F37;
+    background-color: #e4cdb8;
+    padding: 7px;
+    text-align: center;
+}
+
+td {
+    padding: 4px;
+    text-align: center;
+    border: 2px solid #EFF0F0;
+}
+
+
+/* Mise en page de la section portefolio */
+
+#portefolio .section-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+#portefolio .post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px auto;
+    max-width: 350px;
+}
+
+#portefolio .post footer {
+    border-top: 1px solid #ccc;
+    padding: 1em 0;
+    margin-top: 1em;
+}
+
+#portefolio .button-light-color {
+    display: block;
+    background-color: #672a3f;
+    padding: 1em;
+    margin: 1em;
+    color: white;
+    font-size: 1.1em;
+    text-align: center;
+    border-radius: 3px;
+}
+
+#portefolio h3 {
+    margin: 1em;
+} 
+
+#portefolio h3 a {
+    color: #2C2F37;
+    font-size: 1.2em;
+}
+
+/* Mise en forme de la section Contact */
+
+#contact .section-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+#contact .text-left {
+    max-width: 200px;
+    padding: 2px;
+}
+
+#contact .text-right p {
+    text-align: left;
+}
+
+#contact img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
