@@ -211,6 +211,14 @@ img {
     align-items: center;
 }
 
+#skills ul {
+    list-style-position: inside;
+}
+
+#skills li {
+    padding-left: 2rem;
+}
+
 /* Mise en forme du tableau */
 table {
     table-layout: fixed;
